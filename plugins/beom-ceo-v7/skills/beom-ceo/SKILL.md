@@ -21,7 +21,7 @@ allowed-tools:
   - ToolSearch
 ---
 
-# CS-CEO — CS 시리즈 총괄 오케스트레이터 (v5 + Partnership Protocol)
+# beom-CEO — CS 시리즈 총괄 오케스트레이터 (v5 + Partnership Protocol)
 
 ## 개요
 
@@ -115,7 +115,7 @@ allowed-tools:
 2. SKILL.md `description`을 읽어 타이밍(Pre/In/Post/Wraps) 자동 추론
 3. 적절한 실행 모드로 협업 진행
 
-탐색 순서: CS-plugins 내부 → `~/.claude/plugins/marketplaces` → `~/.claude/plugins/cache` → `~/.claude/skills`
+탐색 순서: beom-plugins 내부 → `~/.claude/plugins/marketplaces` → `~/.claude/plugins/cache` → `~/.claude/skills`
 
 파트너를 명시하지 않아도 CEO가 알려진 패턴은 자동으로 감지해 알린 후 진행한다.
 

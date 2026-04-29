@@ -1,15 +1,15 @@
 ---
-description: "CS 세션 종료 자동화 - 4-Agent 병렬 분석 → 학습 저장 → 활성 플러그인 버전업 → GitHub push (/cs-end)"
+description: "CS 세션 종료 자동화 - 4-Agent 병렬 분석 → 학습 저장 → 활성 플러그인 버전업 → GitHub push (/beom-end)"
 allowed-tools: Bash, Read, Write, Edit, Glob, Grep, Task, Agent, AskUserQuestion
 ---
 
-# /cs-end — CS Session Closing
+# /beom-end — CS Session Closing
 
 세션을 안전하게 종료하면서 학습을 영속화하고 변경된 플러그인을 자동으로 버전업·푸시합니다.
 
 ## ⚠️ Author-Only Command
 
-`/cs-end` is designed for the **plugin author** (`intenet1001-commits`). It commits and pushes changes back to the marketplace repository.
+`/beom-end` is designed for the **plugin author** (`intenet1001-commits`). It commits and pushes changes back to the marketplace repository.
 
 If you are not the author, Phase 4 (git push) is automatically skipped — your local learnings are still saved.
 
@@ -114,7 +114,7 @@ Phase 4 완료 직후, 다음 형식으로 출력합니다:
 ## 사용 예
 
 ```
-/cs-end                  # 표준 종료 (분석 → 버전업 → push)
-/cs-end --no-push        # push 생략 (로컬만)
-/cs-end --learning-only  # 학습 추출/저장만 (버전업/push 생략)
+/beom-end                  # 표준 종료 (분석 → 버전업 → push)
+/beom-end --no-push        # push 생략 (로컬만)
+/beom-end --learning-only  # 학습 추출/저장만 (버전업/push 생략)
 ```

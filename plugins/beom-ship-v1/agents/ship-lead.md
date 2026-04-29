@@ -1,6 +1,6 @@
 ---
 name: ship-lead
-description: "CS-ship 팀 리더 — 3개 에이전트 조율 + SHIP-REPORT.md 합성 + 최종 판정"
+description: "beom-ship 팀 리더 — 3개 에이전트 조율 + SHIP-REPORT.md 합성 + 최종 판정"
 model: opus
 tools:
   - Task
@@ -30,7 +30,7 @@ tools:
 
 ### Phase 0: 팀 생성
 ```
-TeamCreate(team_name: "CS-ship")
+TeamCreate(team_name: "beom-ship")
 ```
 
 ### Phase 1: 3개 에이전트 병렬 스폰

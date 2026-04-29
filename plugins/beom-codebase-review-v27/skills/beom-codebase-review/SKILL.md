@@ -28,7 +28,7 @@ version: 1.0.0
 ### 4. Electron osascript 자식 프로세스에서 keystroke silent fail — click menu item 사용 (2026-04-27)
 
 - **상황**: Electron 글로벌 단축키로 스니펫 실행 시 `osascript -e 'keystroke "v" using command down'`이 exit 0을 반환하지만 텍스트가 삽입되지 않음.
-- **발견**: Electron 자식 프로세스(exec)에서 System Events keystroke "v" using command down은 sandbox/권한 문제로 silent fail. `click menu item "Paste" of menu "Edit" of menu bar item "Edit" of menu bar 1`이 유일하게 신뢰 가능한 대안. 또한 런처 창이 열릴 때 frontmost app을 미리 캡처(previousApp)하지 않으면 창 활성화 후 CS-all 자신이 target이 되는 문제 발생.
+- **발견**: Electron 자식 프로세스(exec)에서 System Events keystroke "v" using command down은 sandbox/권한 문제로 silent fail. `click menu item "Paste" of menu "Edit" of menu bar item "Edit" of menu bar 1`이 유일하게 신뢰 가능한 대안. 또한 런처 창이 열릴 때 frontmost app을 미리 캡처(previousApp)하지 않으면 창 활성화 후 beom-all 자신이 target이 되는 문제 발생.
 - **교훈**: Electron에서 클립보드 → 붙여넣기 자동화: ① showLauncher() 시점에 osascript로 frontmost 저장(previousApp) ② 스니펫 실행 시 autoPaste(value, previousApp) 전달 ③ 붙여넣기는 click menu item "Paste" 방식 사용. keystroke "v" using command down은 Electron 자식 프로세스에서 사용 금지.
 
 ### 5. React useState stale closure — async chain의 setData 직후 동일 클로저 data 참조 금지 (2026-04-28)

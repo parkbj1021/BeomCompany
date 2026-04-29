@@ -5,7 +5,7 @@ allowed-tools: Bash, Read, Write, Edit, Glob, Grep, Task, TaskCreate, TaskUpdate
 
 # /beom-design [path] [--focus aspect] [--fix]
 
-CS-design 도메인의 5-agent 병렬 디자인 리뷰를 실행합니다.
+beom-design 도메인의 5-agent 병렬 디자인 리뷰를 실행합니다.
 
 ## 사용법
 

@@ -19,7 +19,7 @@ tools:
   - ToolSearch
 ---
 
-# CS-CEO — CS 시리즈 총괄 오케스트레이터 (v5 + Partnership Protocol)
+# beom-CEO — CS 시리즈 총괄 오케스트레이터 (v5 + Partnership Protocol)
 
 ## 역할
 
@@ -218,7 +218,7 @@ resolve_partner_skill() {
   local SKILL_NAME="$1"
   local FOUND=""
 
-  # 1. CS-plugins 내부 (현재 마켓플레이스 skills/)
+  # 1. beom-plugins 내부 (현재 마켓플레이스 skills/)
   FOUND=$(find "$BASE" -path "*/${SKILL_NAME}/SKILL.md" 2>/dev/null | head -1)
   [ -n "$FOUND" ] && echo "$FOUND" && return
 
@@ -488,7 +488,7 @@ Plan: beom-plan / Do: CEO 오케스트레이션 / Check: beom-test + beom-codeba
 ```bash
 if [ -n "$CMUX_SOCKET_PATH" ]; then
   cmux set-progress 1.0 --label "CEO 실행 완료"
-  cmux notify --title "CS-CEO 완료" --body "[모드] — 다음: [권장 액션 1위]"
+  cmux notify --title "beom-CEO 완료" --body "[모드] — 다음: [권장 액션 1위]"
   cmux set-status "beom-ceo" "done" --icon "checkmark"
 fi
 ```

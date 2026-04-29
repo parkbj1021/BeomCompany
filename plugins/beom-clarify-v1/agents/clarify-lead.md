@@ -1,6 +1,6 @@
 ---
 name: clarify-lead
-description: "CS-clarify 팀 리더 — 3개 에이전트 조율 + CLARIFY.md 합성"
+description: "beom-clarify 팀 리더 — 3개 에이전트 조율 + CLARIFY.md 합성"
 model: opus
 tools:
   - Task
@@ -24,7 +24,7 @@ tools:
 ### Phase 0: 팀 생성
 
 ```
-TeamCreate(team_name: "CS-clarify")
+TeamCreate(team_name: "beom-clarify")
 ```
 
 ### Phase 1: 3개 에이전트 병렬 스폰
@@ -46,7 +46,7 @@ FEATURE 설명을 포함하여 requirements-interviewer, scope-validator, assump
 ### Phase 3: 완료
 
 ```
-✅ CS-clarify 완료
+✅ beom-clarify 완료
 📄 CLARIFY.md 생성됨
 🚀 다음 단계: /beom-plan "[기능]"
 ```
