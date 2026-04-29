@@ -1,0 +1,70 @@
+{
+  "name": "CSnCompany_2-0",
+  "owner": {
+    "name": "intenet1001-commits",
+    "url": "https://github.com/intenet1001-commits"
+  },
+  "description": "CSnCOMPANY — A virtual AI team for Claude Code. Each plugin is a teammate (CEO / PM / Architect / Designer / QA / Reviewer / DevOps) that takes you from idea to ship.",
+  "plugins": [
+    {
+      "name": "cs-end",
+      "description": "🏁 Session Closer — 4-Agent analysis + TIL save + plugin version-up + GitHub push (/cs-end)",
+      "source": "./plugins/cs-end-v1"
+    },
+    {
+      "name": "cs-ceo",
+      "description": "🧭 CEO — Estimates effort and autonomously dispatches across CS-test/CS-plan/CS-codebase-review/cs-design/cs-smart-run. v5.2 adds External Knowledge Gate + partnership protocols.",
+      "source": "./plugins/cs-ceo-v8"
+    },
+    {
+      "name": "cs-clarify",
+      "description": "💬 PM — Requirements clarification before planning. 4-agent Socratic elicitation surfaces hidden assumptions, validates scope, prevents over-engineering.",
+      "source": "./plugins/cs-clarify-v1"
+    },
+    {
+      "name": "CS-plan",
+      "description": "🏗️ Architect — TDD + Clean Architecture 4-agent planner. Domain analysis, architecture design, test strategy, implementation checklist.",
+      "source": "./plugins/CS-plan-v21"
+    },
+    {
+      "name": "cs-design",
+      "description": "🎨 Designer — 5-agent parallel design review: visual hierarchy, interaction quality, design-system consistency, responsive/accessibility, anti-pattern detection.",
+      "source": "./plugins/cs-design-v18"
+    },
+    {
+      "name": "cs-design-sample1",
+      "description": "🎨 Design Reference — Crextio-inspired warm cream palette + amber/slate accents. Audit & apply to Tailwind/Next.js dashboards.",
+      "source": "./plugins/cs-design-sample1"
+    },
+    {
+      "name": "CS-test",
+      "description": "🧪 QA Engineer — 14-agent web testing: security, SEO, performance, accessibility, DB, PWA, touch, image optimization.",
+      "source": "./plugins/CS-test-v25"
+    },
+    {
+      "name": "CS-codebase-review",
+      "description": "🔍 Code Reviewer — 5-agent parallel review: Architecture, Quality, Security, Performance, Maintainability.",
+      "source": "./plugins/CS-codebase-review-v27"
+    },
+    {
+      "name": "cs-ship",
+      "description": "🚢 DevOps — Pre-PR validation gate. 4-agent team checks spec compliance, coverage, commit-message quality before merge.",
+      "source": "./plugins/cs-ship-v1"
+    },
+    {
+      "name": "cs-smart-run",
+      "description": "⚡ Team Lead — Two-phase orchestrator: plan with Opus → execute with Sonnet agents in parallel.",
+      "source": "./plugins/cs-smart-run"
+    },
+    {
+      "name": "cs-experiencing",
+      "description": "📚 Knowledge Keeper — Meta-router across CS-test / CS-plan / CS-codebase-review / cs-design with versioned learnings. Includes /cs-end session-wrap.",
+      "source": "./plugins/cs-experiencing-v7"
+    },
+    {
+      "name": "convo-maker",
+      "description": "🗣️ Language Coach — Convert session Q&A into natural American English conversations for language learning.",
+      "source": "./plugins/convo-maker"
+    }
+  ]
+}
